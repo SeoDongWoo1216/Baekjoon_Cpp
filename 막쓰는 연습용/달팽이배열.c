@@ -1,8 +1,8 @@
 #define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
+
+
 // 배열을 프린트 해주는 함수 . 배열의 크기 n과 배열을 인자로 받음
-
-
 void printarr(int n, int (*arr)[4]) 
 { 
 	int i, j; for (i = 0; i < n; i++) 
@@ -11,7 +11,7 @@ void printarr(int n, int (*arr)[4])
 		{ 
 			printf("%3d ", arr[i][j]); 
 		} 
-		printf("\n"); 
+		printf("\n");
 	} 
 } 
 
