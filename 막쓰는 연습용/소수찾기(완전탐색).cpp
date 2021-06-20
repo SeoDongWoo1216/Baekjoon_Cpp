@@ -33,6 +33,9 @@ bool isSosu(int n)
 }
 
 
+/// <summary>
+/// solution
+/// </summary>
 int solution(string numbers)
 {
 
@@ -48,17 +51,16 @@ int solution(string numbers)
 
 	sort(num.begin(), num.end());   // next_permutation 함수를 쓰기위해 정렬
 
-
 	do
 	{
-		for (int i = 2; i <= len; i++)     // i가 2부터 시작하는 이유는 2자리수부터 구하기 위함
+		for (int i = 2; i <= len; i++)    // i가 2부터 시작하는 이유는 2자리수 ~ len자리수까지 구하기 위함
 		{
-			string temp = "";  // 숫자조합을 받을 임시 문자열 변수
-			for (int j = 0; j < i; j++)    // 0부터 numbers의 배열 크기만큼 for문 돌림
+			string temp = "";             // 숫자조합을 받을 임시 문자열 변수
+			for (int j = 0; j < i; j++)   // 0부터 numbers의 배열 크기만큼 for문 돌림
 			{
 				temp += num[j] + '0';
 			}
-			allnum.push_back(stoi(temp));  // 합쳐진 숫자를 정수로 변환해서 allnum에 저장
+			allnum.push_back(stoi(temp)); // 합쳐진 숫자를 정수로 변환해서 allnum에 저장
 		}
 
 	} while (next_permutation(num.begin(), num.end()));  // 숫자를 섞어줌
@@ -91,6 +93,8 @@ int main()
 
 	return 0;
 }
+
+
 
 
 /*
