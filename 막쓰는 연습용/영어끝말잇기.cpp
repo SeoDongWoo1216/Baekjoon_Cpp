@@ -1,3 +1,7 @@
+/*
+    í”„ë¡œê·¸ë˜ë¨¸ìŠ¤ : ì˜ì–´ëë§ì‡ê¸°
+*/
+
 #include <string>
 #include <vector>
 #include <iostream>
@@ -53,12 +57,12 @@ vector<int> solution(int n, vector<string> words)
 
 int main()
 {
-	vector<string> °³¾î·Æ³× = { "tank", "kick", "know", "wheel", "land", "dream", "mother", "robot", "tank" };
+	vector<string> ê°œì–´ë µë„¤ = { "tank", "kick", "know", "wheel", "land", "dream", "mother", "robot", "tank" };
 	//                           1        2       3       1        2       3        1          2       3
-	solution(3, °³¾î·Æ³×);  // 3¸íÀÌ¼­ tempÀÇ ³¡¸»ÀÕ±â½ÃÀÛ
+	solution(3, ê°œì–´ë µë„¤);  // 3ëª…ì´ì„œ tempì˜ ëë§ì‡ê¸°ì‹œì‘
 
 
 
-	vector<string> ¸Å¿ì¾î·Æ³× = { "hello", "one", "even", "never", "now", "world", "draw" };
-	solution(2, ¸Å¿ì¾î·Æ³×);
+	vector<string> ë§¤ìš°ì–´ë µë„¤ = { "hello", "one", "even", "never", "now", "world", "draw" };
+	solution(2, ë§¤ìš°ì–´ë µë„¤);
 }
