@@ -26,7 +26,6 @@ int solution(int bridge_length, int weight, vector<int> truck_weights)
     queue<int> on_bridge;  // 다리 위 트럭 리스트
     int idx = 0;           // 트럭의 인덱스(몇번째 트럭인지)
 
-
     while (1)
     {
         Time++;  // 1초 추가
